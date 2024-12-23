@@ -1,0 +1,26 @@
+---
+theme: dark
+
+background:
+  image: /custom/bg.jpg
+  opacity: 90
+  blur: md
+  saturate: 75
+  brightness: 50
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+
+hideVersion: true
+
+color: stone
+
+quicklaunch:
+  searchDescriptions: true
+  hideInternetSearch: true
+  showSearchSuggestions: true
+  hideVisitURL: true
+  provider: google
+
+target: _self

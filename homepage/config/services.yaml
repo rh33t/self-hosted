@@ -1,0 +1,48 @@
+- Network:
+  - openvpn:
+      href: "/"
+      icon: openvpn
+      ping: 192.168.1.203
+      description: Secure VPN connection
+
+  - pi.hole:
+      href: http://pi.hole
+      icon: pi-hole
+      description: Network-wide ad blocker
+
+  - Huawei Router:
+      href: http://192.168.1.1
+      icon: router
+      description: Router administration interface
+
+- Media:
+  - Nextcloud:
+      href: https://nextcloud.m3a.site
+      icon: nextcloud
+      description: File sharing and collaboration platform
+
+  - Transmission Downloader:
+      href: https://transmission.m3a.site/transmission/web/
+      icon: transmission
+      description: BitTorrent client
+
+  - Jellyfin:
+      href: https://jellyfin.m3a.site
+      icon: jellyfin
+      description: Media server software
+
+- Operation Tools:
+  - Proxmox VE:
+      href: https://192.168.1.200:8006
+      icon: proxmox
+      description: Virtualization management platform
+
+  - Gitea:
+      href: https://gitea.m3a.site
+      icon: gitea
+      description: Self-hosted Git service
+
+  - Jenkins:
+      href: https://jenkins.m3a.site
+      icon: jenkins
+      description: Continuous integration server

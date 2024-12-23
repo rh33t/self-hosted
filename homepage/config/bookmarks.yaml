@@ -1,0 +1,51 @@
+- Developer:
+    - Github:
+        - abbr: GH
+          href: https://github.com/kraaakilo
+          icon: github-light
+    - GitLab:
+        - abbr: GL
+          href: https://gitlab.com/kraaakilo
+          icon: gitlab
+
+- AI:
+    - ChatGPT:
+        - abbr: OA
+          href: https://chatgpt.com/
+          icon: chatgpt
+          description: ""
+    - Claude:
+        - abbr: CL
+          href: https://claude.ai
+          icon: /custom/claude.png
+          description: ""
+
+- Cybersecurity:
+    - Marc-Elvis:
+        - abbr: 3A
+          href: https://kraaakilo.com/
+          icon: /custom/triplea.png
+    - OWASP:
+        - abbr: OWASP
+          href: https://owasp.org/
+          icon: owasp-zap
+
+- Social:
+    - Reddit:
+        - abbr: RE
+          href: https://reddit.com/
+          icon: reddit
+    - Twitter:
+        - abbr: TW
+          href: https://twitter.com/
+          icon: twitter
+
+- Entertainment:
+    - YouTube:
+        - abbr: YT
+          href: https://youtube.com/
+          icon: youtube
+    - Twitch:
+        - abbr: TW
+          href: https://twitch.tv/
+          icon: twitch
