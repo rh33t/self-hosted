@@ -2,7 +2,7 @@
 
 This repository contains everything needed to get started with self-hosting various applications using Docker, along with useful scripts for Proxmox and other dynamic setups.
 
-For detailed instructions, configuration explanations, and additional setup steps, please visit the [full blog post here](https://kraaakilo.com).
+For detailed instructions, configuration explanations, and additional setup steps, please visit the [full blog post here](https://kraaakilo.com/blog/mon-setup-self-hosting).
 
 ## Prerequisites
 
