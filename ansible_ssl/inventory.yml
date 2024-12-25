@@ -1,0 +1,22 @@
+all:
+  vars:
+    ansible_user: root
+    ansible_python_interpreter: auto_silent
+    ansible_ssh_private_key_file: ~/Labs/sysadmin/pve
+
+ssl_producer:
+  hosts:
+    192.168.1.201:
+
+ssl_consumers:
+  hosts:
+    192.168.1.205:
+    192.168.1.208:
+
+portainer:
+  hosts:
+    192.168.1.208:
+
+gitea:
+  hosts:
+    192.168.1.205:

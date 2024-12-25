@@ -1,0 +1,40 @@
+- name: Get Let's Encrypt Certificate
+  hosts: ssl_producer
+  tasks:
+    - name: get certificate fullchain
+      ansible.builtin.fetch:
+        src: /var/apps/nginx-proxy-manager/letsencrypt/live/npm-1/fullchain.pem
+        dest: ./ssl/
+        flat: yes
+
+    - name: get certificate privkey
+      ansible.builtin.fetch:
+        src: /var/apps/nginx-proxy-manager/letsencrypt/live/npm-1/privkey.pem
+        dest: ./ssl/
+        flat: yes
+
+- name: Copy SSL files to Gitea server
+  hosts: gitea
+  tasks:
+    - name: Copy fullchain.pem to Gitea
+      ansible.builtin.copy:
+        src: ./ssl/fullchain.pem
+        dest: /etc/nginx/ssl/gitea/fullchain.pem
+
+    - name: Copy privkey.pem to Gitea
+      ansible.builtin.copy:
+        src: ./ssl/privkey.pem
+        dest: /etc/nginx/ssl/gitea/privkey.pem
+
+- name: Copy SSL files to portainer server
+  hosts: portainer
+  tasks:
+    - name: Copy fullchain.pem to portainer
+      ansible.builtin.copy:
+        src: ./ssl/fullchain.pem
+        dest: /home/portainer/certs/fullchain.pem
+
+    - name: Copy privkey.pem to portainer
+      ansible.builtin.copy:
+        src: ./ssl/privkey.pem
+        dest: /home/portainer/certs/privkey.pem
