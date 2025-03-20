@@ -7,11 +7,6 @@ services:
       - '443:443'
       - '81:81'
     environment:
-      DB_MYSQL_HOST: ${DB_HOST}
-      DB_MYSQL_PORT: ${DB_PORT}
-      DB_MYSQL_USER: ${DB_USER}
-      DB_MYSQL_PASSWORD: ${DB_PASSWORD}
-      DB_MYSQL_NAME: ${DB_NAME}
       DISABLE_IPV6: ${DISABLE_IPV6}
     volumes:
       - ./data:/data

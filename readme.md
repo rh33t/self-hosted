@@ -1,17 +1,22 @@
-# 3A Self-Hosted
+# Self-Hosted
 
-## Proxmox Host Overview
-![host](selfhosted.drawio.png)
+Docker Compose files and supporting scripts from my home server.
 
-This repository contains everything needed to get started with self-hosting various applications using Docker, along with useful scripts for Proxmox and other dynamic setups.
+![Host layout](selfhosted.drawio.png)
 
-For detailed instructions, configuration explanations, and additional setup steps, please visit the [full blog post here](https://kraaakilo.com/blog/mon-setup-self-hosting).
+The repository contains configurations for Homepage, Nextcloud, Nginx Proxy
+Manager, Portainer, and Transmission. It also includes an Ansible playbook for
+copying TLS certificates and a Cloudflare DNS update script.
 
-## Prerequisites
+These files contain host-specific ports, paths, addresses, and time zones. Review
+them before use. For services with an `.env.start` file, copy it to `.env` and
+replace the example values.
 
-- Proxmox (for virtualization and not mandatory)
-- Docker & Docker Compose Plugin
+Start one service from the repository root with:
 
-## Notes
+```sh
+docker compose -f <service>/compose.yml up -d
+```
 
-For more in-depth guidance, security configurations, backup strategies, and monitoring setup, refer to the blog post linked above.
+Setup notes are available in the
+[related blog post](https://kraaakilo.com/blog/mon-setup-self-hosting).
