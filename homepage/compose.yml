@@ -10,6 +10,6 @@ services:
       - ./assets/:/app/public/custom/
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
-      - HOMEPAGE_ALLOWED_HOSTS: 192.168.1.101:3000
-      - PUID: 1000
-      - PGID: 1000
+      - HOMEPAGE_ALLOWED_HOSTS=192.168.1.101:3000
+      - PUID=1000
+      - PGID=1000
