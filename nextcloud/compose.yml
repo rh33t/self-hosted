@@ -11,8 +11,7 @@ services:
     volumes:
       - ./config:/config
       - ./data:/data
-      # - /mnt/datafiles/:/mnt/datafiles
-      # - /mnt/datafiles-2/:/mnt/datafiles-2
+      - /mnt/datafiles/:/mnt/datafiles
     ports:
       - 8000:443
     restart: unless-stopped
